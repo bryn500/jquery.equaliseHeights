@@ -35,8 +35,6 @@ $('.toEqualise').equaliseHeights({
     useMinHeight: false,
     delay: 200,
     runEqualise: function () {
-        // function that decides whether to run the equalise script or reset the height
-        // can therefore be run at specified breakpoints
         return true;
     }
 });
@@ -46,4 +44,4 @@ Attribute		        | Type	  	  | Default		      | Description
 ---			            | ---		      | ---				      | ---
 `useMinHeight`      | *bool*  	  | `false`		      | Equalise heights to the shortest element rather than the default tallest
 `delay`	            | *int*	      | `200`	          | debounce delay
-`runEqualise`	      | *function*  | function () {return true;}    | Time animation takes to complete
+`runEqualise`	      | *function*  | function () {return true;}    | function that decides whether to run the equalise script or reset the heights, allows script to run at different breakpoints
