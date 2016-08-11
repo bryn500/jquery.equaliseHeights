@@ -88,5 +88,8 @@
         // rerun the equalise on resize of window
         // debounced for efficiency
         $(window).resize(debounce(run, settings.delay, false));
+        
+        // Chainable
+        return self;
     };
 }(jQuery));
