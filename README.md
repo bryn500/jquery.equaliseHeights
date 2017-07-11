@@ -8,8 +8,6 @@ Equalise heights of elements
 <!DOCTYPE html>
 <html>
 <head>
-<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="jquery.equaliseHeights.js"></script>
 </head>
 <body>
   <div class="toEqualise" style="float: left; background:#aaa;">
@@ -21,6 +19,8 @@ Equalise heights of elements
     <p>Test</p>
     <p>Test</p>
   </div>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="jquery.equaliseHeights.js"></script>
 <script>
   jQuery('.toEqualise').equaliseHeights();
 </script>
